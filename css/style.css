@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.wrapper{
+    height: 80%;
+    background-color:rgb(233, 215, 193);
+}
+
+/* header */
+
+header{   
+    font-family: 'Press Start 2P';
+    padding: 15px;
+    background-color: grey;
+}
+
+.logo_gif{
+    float: left;
+    margin: 10px;
+}
+
+.logo_gif img{
+    width: 600px;
+    height: 600px;
+}
+
+.title_text{
+    color:bisque;
+    font-size: 30px;
+    margin: 10px;
+    user-select:none;
+}
+
+
+/* aside */
+
+aside{
+    float:left;
+    width: 15%;
+    border: 2px solid grey;
+    border-top: 0;
+    height: 100%;
+}
+
+li{
+    display:block;
+    padding: 15px 20px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+li:hover{
+    background-color: antiquewhite;
+    transform: scale(1.02);
+}
+
+/* main */
+
+main{
+    width: 85%;
+    margin-left:15%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid grey;
+}
+
+.hello_gif{
+    display: inline;
+    height: 100%;
+    float: right;
+    width: 40%;
+    margin-left: 60%;
+    background: url(../images/anime-hello.gif)
+    bottom right no-repeat;
+    z-index: 1;
+}
+
+
+
+/* address */
+
+address{
+      
+}
