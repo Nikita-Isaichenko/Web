@@ -11,6 +11,7 @@ html, body{
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    min-width: 700px;
 }
 
 .wrapper{
@@ -26,7 +27,8 @@ header{
     font-family: 'Press Start 2P';
     padding: 15px;
     background-color: grey;
-
+    min-height: 72px;
+    max-height: 73px;
 }
 
 .logo_gif{
@@ -67,6 +69,7 @@ li{
 }
 
 li a{
+    display: block;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
