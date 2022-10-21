@@ -15,15 +15,18 @@ body{
 
 .wrapper{
     height: 80%;
-    background-color:rgb(233, 215, 193);
+    width: 100%;
+    border-bottom: 2px solid grey;
 }
 
 /* header */
 
-header{   
+header{  
+    height: 12%; 
     font-family: 'Press Start 2P';
     padding: 15px;
     background-color: grey;
+
 }
 
 .logo_gif{
@@ -39,22 +42,24 @@ header{
 .title_text{
     color:bisque;
     font-size: 30px;
-    margin: 10px;
     user-select:none;
+    margin: 5px auto;
 }
 
 
 /* aside */
 
-aside{
+.sidebar{
     float:left;
     width: 15%;
-    border: 2px solid grey;
+    border-right: 2px solid grey;
     border-top: 0;
     height: 100%;
+    background-color:rgb(233, 215, 193);
 }
 
 li{
+    overflow: hidden;
     display:block;
     padding: 15px 20px;
     border-bottom: 1px solid grey;
@@ -67,6 +72,11 @@ li a{
     text-transform: uppercase;
 }
 
+li a p{
+    word-wrap: break-word;
+}
+
+
 li:hover{
     background-color: antiquewhite;
     transform: scale(1.02);
@@ -75,37 +85,34 @@ li:hover{
 /* main */
 
 main{
-    width: 85%;
-    margin-left:15%;
+    float:left;
+    overflow: hidden;
+    width: 55%;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid grey;
+}
+
+.text-info{
+    text-align: center;
+}
+
+.text-info p{
+    margin:20%;
 }
 
 .hello_gif{
-    display: inline;
-    height: 100%;
-    float: right;
-    width: 40%;
-    margin-left: 60%;
-    background: url(../images/anime-hello.gif)
-    bottom right no-repeat;
-    z-index: 1;
-}
-
-.hello_text{
-    height: 100%;
-    margin-right: 40%;
-    padding: 15px;
-}
-
-.hello_text p{
+    float:left;
+    width: 30%;
     height: 100%;
 }
 
+.hello_gif img{
+    width: 100%;
+    height: 100%;
+}
 
 /* address */
 
 address{
-      
+      height: 8%;
 }
