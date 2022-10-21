@@ -93,6 +93,15 @@ main{
     z-index: 1;
 }
 
+.hello_text{
+    height: 100%;
+    margin-right: 40%;
+    padding: 15px;
+}
+
+.hello_text p{
+    height: 100%;
+}
 
 
 /* address */
