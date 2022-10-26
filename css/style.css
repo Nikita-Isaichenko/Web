@@ -52,10 +52,14 @@ header{
     background-color:rgb(233, 215, 193);
 }
 
+ul{
+    border-bottom: 1px solid grey;
+}
+
 li{
     overflow: hidden;
     display:block;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
     text-align: center;
 }
 
@@ -68,10 +72,10 @@ li a{
 
 li a p{
     word-wrap: break-word;
-    margin:10% 20%;
+    margin:10% 5%;
 }
 
-#curr_nav{
+.curr_nav{
     background-color:antiquewhite;
 }
 
@@ -81,6 +85,30 @@ li:hover{
     transform: scale(1.02);
 }
 
+details[open] {
+    border-bottom: 1px solid grey; 
+}
+
+
+details summary{
+    display:block;
+    text-align: center;
+    list-style:none;
+    cursor: pointer;
+    word-wrap: break-word;
+    margin:10% 5%;
+    text-transform: uppercase;
+}
+
+summary:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ details[open] summary:before {
+    content: "-";
+ }
 /* main */
 
 main{
@@ -119,8 +147,20 @@ table{
     margin:0 auto;
     margin-top: 3%;
     border: 3px solid grey;
-    background-color:blanchedalmond;
+    background-color:rgb(255, 255, 255);
     
+}
+
+.evalutions_green{
+    background-color: green;
+}
+
+.evalutions_red{
+    background-color: red;
+}
+
+.evalutions_yellow{
+    background-color: yellow;
 }
 
 td{
@@ -168,4 +208,5 @@ td .t_about_link{
 
 .t_footer img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
