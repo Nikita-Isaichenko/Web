@@ -113,6 +113,7 @@ details[open] {
  .details_items{
     width: 100%;
     display: flex;
+    padding-top: 20px;
  }
 
  .hobby_details{
