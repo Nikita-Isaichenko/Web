@@ -15,8 +15,9 @@ body{
 }
 
 .wrapper{
-    height: 88%;
+    background-color: rgb(233, 215, 193);
     width: 100%;
+    height: 88%;
     border-bottom: 2px solid grey;
 }
 
@@ -90,8 +91,7 @@ details[open] {
 }
 
 
-details summary{
-    display:block;
+.sidebar_details summary{
     text-align: center;
     list-style:none;
     cursor: pointer;
@@ -100,14 +100,42 @@ details summary{
     text-transform: uppercase;
 }
 
-summary:before {
+.sidebar_details summary:before {
     content: "+";
     font-size: 20px;
     font-weight: bold;
  }
 
- details[open] summary:before {
+ .sidebar_details[open] summary:before {
     content: "-";
+ }
+
+ .details_items{
+    width: 100%;
+    display: flex;
+ }
+
+ .hobby_details{
+    flex: 1;
+    font-family:  'Press Start 2P';
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    word-wrap: break-word;
+    text-transform: uppercase;
+ }
+
+ .hobby_details summary{
+    list-style:none;
+ }
+
+ .hobby_details .detaisl_item{
+    margin-top:15px;
+ }
+
+ .hobby_details img{
+    width: 95%;
+    height: 150%;
  }
 /* main */
 
@@ -115,7 +143,12 @@ main{
     float:left;
     overflow: hidden;
     height: 100%;
+    width: 85%;
     background-color:bisque;
+}
+
+.hobby_info{
+    overflow: scroll;
 }
 
 .text_info_main{
@@ -123,9 +156,6 @@ main{
     width: 55%;
 }
 
-.text_info{
-    width: 85%;
-}
 
 .text_info_main p, .text_info p{
     margin:20%;
@@ -138,8 +168,8 @@ main{
 }
 
 .hello_gif img{
-    width: 99%;
-    height: 99%;
+    width: 100%;
+    height: 99.5%;
 }
 
 /* table */
