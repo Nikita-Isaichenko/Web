@@ -12,6 +12,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     min-width: 700px;
+    
 }
 
 .wrapper{
@@ -37,7 +38,7 @@ header{
 .title_text a{
     color:rgb(255, 228, 196);
     font-size: 30px;
-    
+    outline: none;
     text-decoration: none;
 }
 
@@ -53,27 +54,29 @@ header{
     background-color:rgb(233, 215, 193);
 }
 
-ul{
+aside ul{
     border-bottom: 1px solid grey;
 }
 
-li{
+aside li{
     overflow: hidden;
     display:block;
     border-top: 1px solid grey;
     text-align: center;
+    
 }
 
-li a{
+aside li a{
     display: block;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    outline: none;
 }
 
-li a p{
+aside li a p{
     word-wrap: break-word;
-    margin:10% 5%;
+    margin:5% 5%;
 }
 
 .curr_nav{
@@ -81,7 +84,7 @@ li a p{
 }
 
 
-li:hover{
+aside li:hover{
     background-color: antiquewhite;
     transform: scale(1.02);
 }
@@ -98,6 +101,7 @@ details[open] {
     word-wrap: break-word;
     margin:10% 5%;
     text-transform: uppercase;
+    outline: none;
 }
 
 .sidebar_details summary:before {
@@ -128,6 +132,7 @@ details[open] {
 
  .hobby_details summary{
     list-style:none;
+    outline: none;
  }
 
  .hobby_details .detaisl_item{
@@ -151,6 +156,11 @@ main{
 
 .hobby_info{
     overflow: scroll;
+}
+
+.other_info{
+    overflow:scroll;
+    text-align: center;
 }
 
 .text_info_main{
@@ -241,4 +251,33 @@ td .t_about_link{
 .t_footer img:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+p{
+    padding: 10px;
+}
+
+.top_button,
+.bottom_button {
+    width: auto;
+    margin: 20px;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 5px solid grey;
+    text-decoration: none;
+    color:black ;
+    background-color: rgb(173, 173, 173);
+}
+
+.bottom_button {
+    left: 15%;
+}
+
+.top_button {
+    right: 0;
 }
