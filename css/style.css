@@ -243,12 +243,14 @@ td .t_about_link{
     color:#4006c7;
 }
 
-.t_footer img{
+.t_footer img, .otchet{
     margin: 0 20px;
     vertical-align:middle;
 }
 
-.t_footer img:hover{
+
+
+.otchet:hover, .t_footer img:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
