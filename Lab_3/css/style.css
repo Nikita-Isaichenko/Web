@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-color: #ccc;
+}
+
+.container{
+    height: 100%;
+    padding: 10px 15px 0;
+}
+
+.header{
+    height: 10%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 40%;
+    text-align: center;
+}
+
+.header h1{
+    cursor: pointer;
+}
+
+main{
+    height: 80%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer{
+    height: 10%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons_task{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    height: 10%;
+}
+
+.buttons_task input{
+    flex: 1;
+    margin: 10px;
+    height: 70%;
+}
+
+.clock{
+    bottom: 10px;
+}
+
+.menu_horizontal{
+    margin-bottom: 10px;
+}
+
+.menu_vertical{
+    margin-bottom: 10px;
+}
+
+.table_menu_h{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%px;
+    border: 1px solid #ccc;
+}
+
+.table_menu_v{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%px;
+    border: 1px solid #ccc;
+}
+
+.item{
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.selected{
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.image_task_3{
+    width: 100%;
+    height: 100%;
+}
+
+.image_task_3 img{
+    width: inherit;
+    height:90%;
+}
+
+.field{
+    margin: 2% 2%;
+    border: 2px solid #ccc;
+    height: 100px;
+    width: 96%;
+    height: 90%;
+}
+
+.text{
+    position: absolute;
+}
+
+
+

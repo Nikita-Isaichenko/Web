@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script src="js/tasks.js"></script>
+    <title>Lab_3</title>
+</head>
+
+<body onload="timer();">
+    <div class="container">
+        <header class="header">
+            <h1>Lab 3</h1>
+        </header>
+        <main>
+            <div class="buttons_task">
+                <input type="button" name="Task_1" value="Task 1" onclick="task_1();">
+                <input type="button" name="Task_2" value="Task 2" onclick="task_2();">
+                <input type="button" name="Task_3" value="Task 3" onclick="task_3();">
+                <input type="button" name="Task_4" value="Task 4" onclick="task_4();">
+            </div>
+            <div class="menu_horizontal">
+                <label for="table_menu_h">Горизонтальное меню</label>
+                <table class="table_menu_h">
+                    <tr>
+                        <td id="item_h_1" class="item" onclick="task_1();" onmouseover="item_h_1.className ='selected'"
+                        onmouseout="item_h_1.className='item'">Task 1</td>
+                        <td id="item_h_2" class="item" onclick="task_2();" onmouseover="item_h_2.className ='selected'"
+                        onmouseout="item_h_2.className='item'">Task 2</td>
+                        <td id="item_h_3" class="item" onclick="task_3();" onmouseover="item_h_3.className ='selected'"
+                        onmouseout="item_h_3.className='item'">Task 3</td>
+                        <td id="item_h_4" class="item" onclick="task_4();" onmouseover="item_h_4.className ='selected'"
+                        onmouseout="item_h_4.className='item'">Task 4</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="menu_vertical">
+                <label for="table_menu_v">Вертикальное меню</label>
+                <table class="table_menu_v">
+                    <tr>
+                        <td id="item_v_1" class="item" onclick="task_1();" onmouseover="item_v_1.className ='selected'"
+                        onmouseout="item_v_1.className='item'">Task 1</td>
+                    </tr>
+                    <tr>
+                        <td id="item_v_2" class="item" onclick="task_2();" onmouseover="item_v_2.className ='selected'"
+                        onmouseout="item_v_2.className='item'">Task 2</td>
+                    </tr>
+                    <tr>
+                        <td id="item_v_3" class="item" onclick="task_3();" onmouseover="item_v_3.className ='selected'"
+                        onmouseout="item_v_3.className='item'">Task 3</td>
+                    </tr>
+                    <tr>
+                        <td id="item_v_4" class="item" onclick="task_4();" onmouseover="item_v_4.className ='selected'"
+                        onmouseout="item_v_4.className='item'">Task 4</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="clock">
+                <h2>
+                    <div id="timer">                 
+                    </div>
+                </h2>
+            </div>
+        </footer>
+    </div>
+    
+        
+</body>
+
+</html>

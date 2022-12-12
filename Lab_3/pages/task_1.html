@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <script src="../js/tasks.js"></script>
+    <title>task 1</title>
+</head>
+<body onload="clock();">
+    <div class="container">
+        <header class="header">
+            <h1 class="text_header" onclick="goHome()">Lab 3</h1>
+        </header>
+        <main>
+            <form name="write_data">        
+                <label for="list">Сгенерированный массив чисел:</label>
+                <input type="text" name="list" size="30"><br>
+                <label for="result">Среднее геометрическое элементов массива:</label>
+                <input type="text" name="result" placeholder=""><br>
+                <input type="button" onclick="geometricMeanElements(write_data.list, write_data.result);"
+                       name="button_calculated" value="Рассчитать"><br>
+            </form>
+        </main>
+        <footer>
+            <div class="clock">
+                <h2>
+                    <div id="clock">    
+                    </div>
+                </h2>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
