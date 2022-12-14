@@ -92,20 +92,45 @@ function changeSex(obj){
     }
 }
 
-// function setMarginforText(){
-//     var texts = document.getElementsByName("text");
-//     var labels = document.getElementsByClassName("label_text");
+function setMarginforText(){
+    var texts = document.getElementsByClassName("text");
+    var labels = document.getElementsByClassName("label_text");
     
-//     var max = 0;
+    var max = 0;
 
-//     for (var i = 0; i < labels.length; i++){
+    for (var i = 0; i < labels.length; i++){
 
-//         if (max < labels[i].offsetWidth){
-//             max = labels[i].offsetWidth;
-//         }    
-//     }
+        if (max < labels[i].offsetWidth){
+            max = labels[i].offsetWidth;
+        }    
+    }
 
-//     for (var i = 0; i < texts.length; i++){
-//         texts[i].style.marginLeft = (max - labels[i].offsetWidth) + 10 + 'px';
-//     }
-// }
+    for (var i = 0; i < texts.length; i++){
+        if(texts[i].type == "radio") continue;
+        texts[i].style.marginLeft = (max - labels[i].offsetWidth) + 10 + 'px';
+    }
+}
+
+function Validation(obj){
+    var text = obj.value;
+
+    if (obj.id == "phoneNumber"){
+        var reg = /^\8\d{10}$/;
+        
+    }
+    else if (obj.id == "email"){
+        var reg = /^[\w\.]+@[\w-]+\.[a-z]{2,3}$/i;
+    }
+    else{
+        var reg = /^[а-яА-Я]+$/;
+    }
+
+    var result = reg.test(text);
+
+    if (result == false){
+        obj.style.backgroundColor = 'red';
+    }
+    else{
+        obj.style.backgroundColor = 'green';
+    }
+}

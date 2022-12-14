@@ -10,62 +10,77 @@
 </head>
 <body onload="setMarginforText();">
     <div class="context">
-        <fieldset>
-            <legend style="margin-left: 15px;">Info Form</legend>
-            <form>
+        <form>
+            <fieldset>
+                <legend>Личные данные</legend>
+                <form>
                 <div class="field-form">
                     <label class="label_text">Фамилия</label>
-                    <input type="text" id="secondName" name="text" required>
+                    <input class="text" type="text" id="secondName" name="secondName" required onkeyup="Validation(this)">
                 </div>
                 <div class="field-form">
                     <label class="label_text">Имя</label>
-                    <input type="text" id="firstName" name="text" required>
+                    <input class="text" type="text" id="firstName" name="firstName" size="15" required onkeyup="Validation(this)">
                 </div>
                 <div class="field-form">
                     <label class="label_text">Отчество</label>
-                    <input type="text" id="middleName" name="text" required>
+                    <input class="text" type="text" id="middleName" name="middleName" onkeyup="Validation(this)">
                 </div>
                 <div class="field-form">
-                    <label>Дата рождения</label>
-                    <input type="date" id="birthDate" required>
+                    <label class="label_text">Номер телефона</label>
+                    <input class="text" type="text" id="phoneNumber" name="phoneNumber" size="10" maxlength="11" required onkeyup="Validation(this)">
+                </div>
+                <div class="field-form">
+                    <label class="label_text">Email</label>
+                    <input class="text" type="text" id="email" name="email" required onkeyup="Validation(this)"></input>
+                </div>
+                <div class="field-form">
+                    <label class="label_text">Дата рождения</label>
+                    <input class="text" type="date" id="birthDate" name="birthDate" required>
                 </div>
                 <div class="field-form">
                     Пол: M <input type="radio" id="SexM" value="Men" name="Sex" checked onclick="changeSex(this);"/>
                     Ж <input type="radio" id="SexF" value="Woman" name="Sex" onclick="changeSex(this);"/>
                 </div>
                 <div class="field-form">
-                    <label>Семейное положение <select id="familyStatus" required>
+                    <label>Семейное положение <select id="familyStatus" name="familyStatus" required>
                         <option value="Married" id="Married">Женат</option>
                         <option value="NotMarried" id="NotMarried">Не</option>
                     </select></label>
                     
                 </div>
                 <div class="field-form">
-
+                    <label>Образование <select id="education" name="education" required>
+                        <option value="School" id="School">Школа</option>
+                        <option value="College" id="College">Колледж</option>
+                        <option value="University" id="University">Университет</option>
+                    </select></label>
                 </div>
                 <div class="field-form">
-
+                    <label>Специальность <select id="specialty" name="specialty" required>
+                        <option value="IT" id="IT">ИТ</option>
+                        <option value="Economy" id="Economy">Экономика</option>
+                        <option value="Law" id="Law">Юриспруденция</option>
+                    </select></label>
                 </div>
                 <div class="field-form">
-
+                    <label class="label_text">О себе</label>
+                    <textarea class="text" id="aboutMe" name="aboutMe" rows="5" cols="30" required></textarea>
                 </div>
                 <div class="field-form">
-
+                    <label class="label_text">Логин</label>
+                    <input class="text" type="text" id="login" name="login" required></input>
                 </div>
                 <div class="field-form">
-
+                    <label class="label_text">Пароль</label>
+                    <input class="text" type="password" id="password" name="password" required></input>
                 </div>
                 <div class="field-form">
-
-                </div>
-                <div class="field-form">
-
-                </div>
-                <div class="field-form">
-
-                </div>
-            </form>
-        </fieldset>
+                    <input type="reset" id="reset"></input>                               
+                    <input type="submit" id="submit" value="Отправить"></input>
+                </div>  
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
