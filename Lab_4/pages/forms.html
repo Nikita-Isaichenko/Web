@@ -5,14 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="setMarginforText();">
     <div class="context">
         <fieldset>
             <legend style="margin-left: 15px;">Info Form</legend>
             <form>
-                
+                <div class="field-form">
+                    <label class="label_text">Фамилия</label>
+                    <input type="text" id="secondName" name="text" required>
+                </div>
+                <div class="field-form">
+                    <label class="label_text">Имя</label>
+                    <input type="text" id="firstName" name="text" required>
+                </div>
+                <div class="field-form">
+                    <label class="label_text">Отчество</label>
+                    <input type="text" id="middleName" name="text" required>
+                </div>
+                <div class="field-form">
+                    <label>Дата рождения</label>
+                    <input type="date" id="birthDate" required>
+                </div>
+                <div class="field-form">
+                    Пол: M <input type="radio" id="SexM" value="Men" name="Sex" checked onclick="changeSex(this);"/>
+                    Ж <input type="radio" id="SexF" value="Woman" name="Sex" onclick="changeSex(this);"/>
+                </div>
+                <div class="field-form">
+                    <label>Семейное положение <select id="familyStatus" required>
+                        <option value="Married" id="Married">Женат</option>
+                        <option value="NotMarried" id="NotMarried">Не</option>
+                    </select></label>
+                    
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
+                <div class="field-form">
+
+                </div>
             </form>
         </fieldset>
     </div>

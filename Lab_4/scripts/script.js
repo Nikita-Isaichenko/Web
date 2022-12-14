@@ -76,3 +76,36 @@ function generateElements(el){
     div_3.style.height = '50%';
     div_3.className = 'creating_div';
 }
+
+function changeSex(obj){
+    var sex = obj.value;
+    var married = document.getElementById("Married");
+    var notMarried = document.getElementById("NotMarried");
+
+    if (sex == "Men"){
+        married.innerText = "Женат";
+        notMarried.innerText = "Не женат";
+    }
+    if (sex == "Woman"){
+        married.innerText = "Замужем";
+        notMarried.innerText = "Не замужем";
+    }
+}
+
+// function setMarginforText(){
+//     var texts = document.getElementsByName("text");
+//     var labels = document.getElementsByClassName("label_text");
+    
+//     var max = 0;
+
+//     for (var i = 0; i < labels.length; i++){
+
+//         if (max < labels[i].offsetWidth){
+//             max = labels[i].offsetWidth;
+//         }    
+//     }
+
+//     for (var i = 0; i < texts.length; i++){
+//         texts[i].style.marginLeft = (max - labels[i].offsetWidth) + 10 + 'px';
+//     }
+// }
