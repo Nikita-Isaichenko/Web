@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $(".show").click(function(){
+                $("[href]").show();
+            });
+            $(".hide").click(function(){
+                $("[href]").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <a href="https://github.com/Nikita-Isaichenko/Web">Github-repos-web</a>
+        <a href="https://tusur.ru/ru">Tusur</a>
+        <button class="show">Show</button>
+        <button class="hide">Hide</button>
+    </div>
+</body>
+</html>

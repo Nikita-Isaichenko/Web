@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#but1").click(function(){
+                $("#test").hide();
+            });
+            $("#but2").click(function(){
+                $("#test").show();
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>this is a heading</h2>
+    <p>this is a paragraph.</p>
+    <p id="test">this is another paragraph.</p>
+    <button id="but1">Click me</button>
+    <button id="but2">Click me</button>
+</body>
+</html>

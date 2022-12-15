@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var value = "";
+                $("p").each(function(index, element){
+                    if ((index + 1) % 2 != 0){
+                        $(element).next().text($(element).text());
+                        $(element).css("text-indent", "40px");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Click me</button>
+    <p>number of paragraph 1</p>
+    <p>number of paragraph 2</p>
+    <p>number of paragraph 3</p>
+    <p>number of paragraph 4</p>
+    <p>number of paragraph 5</p>
+    <p>number of paragraph 6</p>
+</body>
+</html>

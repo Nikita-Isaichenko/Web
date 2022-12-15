@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        .table{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            width: 25%;
+            height: 50%;
+            border-collapse: collapse;
+            border: 1px solid grey;
+        }
+        td{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border: 1px solid grey;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("td").mouseenter(function(){
+                $(this).css("background-color", "grey");
+            });
+            $("td").mouseleave(function(){
+                $(this).css("background-color", "white");
+            });
+            $("td").click(function(){
+                $(this).css("background-color", "#555B62");
+            });
+        });
+    </script>
+
+    <title>Lab5</title>
+</head>
+<body>
+    <div class="table">
+        <table>
+            <tr>
+                <th>Выбор задания</th>
+            </tr>
+            <tr>
+                <td><a href="tasks/task1.html">task1</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task2.html">task2</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task3.html">task3</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task4.html">task4</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task5.html">task5</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task6.html">task6</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task7.html">task7</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task8.html">task8</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task9.html">task9</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task10.html">task10</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task11.html">task11</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task12.html">task12</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task13.html">task13</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task14.html">task14</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task15.html">task15</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task16.html">task16</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task17.html">task17</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task18.html">task18</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task19.html">task19</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/task20.html">task20</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/Experiments1.html">Experiments1</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/Experiments2.html">Experiments2</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/Individual_3.html">Individual_3</a></td>
+            </tr>
+            <tr>
+                <td><a href="tasks/Individual_4.html">Individual_4</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

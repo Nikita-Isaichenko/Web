@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function (){
+                $("button").click(function (){
+                    for (var i = 1; i <= 10; i++)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            $("#p"+i).fadeIn(2000);
+                        }
+                        else
+                        {
+                            $("#p"+i).fadeOut(2000);
+                        }
+                    }
+                    for (var i = 1; i <= 10; i++)
+                    {
+                        $("#p"+i).fadeToggle(2000);
+                    }
+                });
+            }); 
+    </script>
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis doloremque quos dolorum. Non, est nam eum aliquam facere velit esse sit eos, mollitia sint numquam consectetur, doloremque saepe unde.</p>
+    <p id="p2">Assumenda nobis alias tempora dolorum non, exercitationem delectus earum molestias nihil eaque, hic ipsum? Nulla qui totam, possimus quasi repellat voluptate amet harum ex libero nesciunt temporibus accusamus impedit quae.</p>
+    <p id="p3">Voluptates veniam, voluptate dicta officiis doloribus unde optio quis iure ea officia eaque perferendis aliquam, facilis temporibus! Accusantium architecto earum officia, pariatur esse quia totam, molestias odio voluptatibus itaque odit.</p>
+    <p id="p4">Quos, totam. Consectetur officiis, alias quo similique provident quaerat aperiam. Nam similique amet sint! Quisquam rerum debitis similique ratione qui libero earum numquam dolorum? Voluptatem corporis dolore est! Iusto, incidunt?</p>
+    <p id="p5">Odit odio ex ipsam fugit, at optio pariatur repudiandae aliquid aspernatur tempora, est expedita facere omnis itaque! Aliquam consequuntur, laborum iste soluta perferendis ullam libero, sunt adipisci nisi, sequi optio.</p>
+    <p id="p6">Quod mollitia natus unde reprehenderit blanditiis provident nihil voluptatem? Aut architecto magnam dolores error adipisci libero totam, repudiandae eos, ducimus nam qui quam? Distinctio ipsa reprehenderit quasi quisquam, cupiditate odit?</p>
+    <p id="p7">Molestiae in quaerat ut adipisci facere doloribus praesentium officia eveniet iure cupiditate! Repellat voluptas blanditiis praesentium, quas hic reiciendis reprehenderit ratione velit culpa totam alias maiores ex quo dolorem non.</p>
+    <p id="p8">Ducimus consequuntur harum voluptatibus quam. Soluta odio sapiente molestias, atque a cumque! Ipsa, ex sapiente, itaque natus cumque repellendus, dolorum saepe tempore quaerat minus explicabo accusantium alias perferendis eius quidem.</p>
+    <p id="p9">Consectetur, esse tenetur ducimus dignissimos vitae numquam repudiandae officiis consequuntur corrupti tempora quidem necessitatibus maiores temporibus delectus placeat aut fuga soluta commodi hic dolore porro reiciendis. Facere impedit maxime quas!</p>
+    <p id="p10">Vero eveniet facere, architecto optio, illum excepturi nisi, consequuntur voluptatem facilis est eligendi. Unde, asperiores saepe provident consectetur vero est quis doloribus facilis ullam. Aliquid error fugit deserunt architecto animi.</p>
+    <button id="fadeToggle">Click me</button>
+</body>
+</html>

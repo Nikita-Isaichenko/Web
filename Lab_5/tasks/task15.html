@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function (){
+                $("button").click(function (){
+                    var links = $('li> a');
+                    for (var i = 0; i < links.length; i++)
+                    {
+                        alert(links[i].href);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="http://jquery.com">jQuery</a></li>
+            <li><a href="http://jqueryui.com">jQuery UI</a></li>
+            <li><a href="http://blog.jquery.com">jQuery Blog</a></li>
+        </ul>
+        <button>Start query</button>
+    </body>
+</html>
