@@ -57,6 +57,7 @@ function setMarginforText(){
     
     var max = 0;
 
+    // Находим максимальную ширину label
     for (var i = 0; i < labels.length; i++){
 
         if (max < labels[i].offsetWidth){
@@ -64,8 +65,9 @@ function setMarginforText(){
         }    
     }
 
+
     for (var i = 0; i < texts.length; i++){
-        if(texts[i].type == "radio") continue;
+        
         texts[i].style.marginLeft = (max - labels[i].offsetWidth) + 10 + 'px';
     }
 }
@@ -77,20 +79,25 @@ function Validation(obj){
         var reg = /^\8\d{10}$/;
         
     }
-    else if (obj.id == "email"){
+    if (obj.id == "email"){
         var reg = /^[\w\.]+@[\w-]+\.[a-z]{2,3}$/i;
     }
-    else{
-        var reg = /^[а-яА-Я]+$/;
+    if (obj.id == "secondName" || obj.id == "firstName" || obj.id == "middleName"){
+        var reg = /[а-яА-Я]/;
     }
 
     var result = reg.test(text);
 
-    if (result == false){
-        obj.style.backgroundColor = 'red';
+    if (result){
+        
+        obj.style.backgroundColor = 'green';
+        console.log("true");
+        console.log("text: " + text);
     }
     else{
-        obj.style.backgroundColor = 'green';
+        obj.style.backgroundColor = 'pink';
+        console.log("false");
+        console.log("text: " + text);
     }
 }
 
